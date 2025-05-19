@@ -1,0 +1,20 @@
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+.state {
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+}
+.country {
+  background-color: mediumseagreen;
+  color: white;
+  padding: 12px;
+}
+.continent {
+  background-color: gold;
+  color: black;
+  padding: 14px;
+}
