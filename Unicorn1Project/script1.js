@@ -7,6 +7,14 @@ function changeBgColor() {
   document.body.style.backgroundColor = "lavender";
 }
 
+// Function to change the text of an element by ID
+function changeText(elementId, newText) {
+  const element = document.getElementById(elementId);
+  if (element) {
+    element.textContent = newText;
+  }
+}
+
 // Special function: Show a random fun geography fact
 function showRandomFact() {
   const facts = [
@@ -18,4 +26,13 @@ function showRandomFact() {
   ];
   const randomIndex = Math.floor(Math.random() * facts.length);
   alert(facts[randomIndex]);
+}
+
+function showRandomCountry() {
+  const countries = [
+    "Brazil", "Canada", "Australia", "India", "Egypt",
+    "Japan", "Norway", "Argentina", "Kenya", "France"
+  ];
+  const randomIndex = Math.floor(Math.random() * countries.length);
+  changeText('randomCountry', "Random Country: " + countries[randomIndex]);
 }
